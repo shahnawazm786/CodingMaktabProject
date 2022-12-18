@@ -7,3 +7,4 @@ z.add('san')
 z.update(set(['p','q']))
 print(z)
 
+print(2**(3**2),(2**3)**2,(2**3)**3)
