@@ -27,4 +27,6 @@ d=7
 cal= c%d #mudulo oprations
 print(cal)
 
-
+array=['welcome','To','Turing']
+print("-".join(array))
+print("Welcome to TURING".capitalize())
