@@ -20,3 +20,7 @@ print(res) # False or False or  True => True
 
 res = 100 >200 or 'A'=='B' or 200<100
 print(res) # False or False or  False => False
+
+#Negations
+print(True)
+print(False)
