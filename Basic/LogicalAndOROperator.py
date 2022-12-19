@@ -15,6 +15,8 @@ print(res) # False and False and  False => False
 res = 100 >200 or 'A'=='A' or 200>100
 print(res) # True or True or  True => True
 
-res = 100 <200 or 'A'=='B' or 200>100
+res = 100 >200 or 'A'=='B' or 200>100
 print(res) # False or False or  True => True
 
+res = 100 >200 or 'A'=='B' or 200<100
+print(res) # False or False or  False => False
