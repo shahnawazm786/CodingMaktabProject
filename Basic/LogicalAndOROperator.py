@@ -9,3 +9,8 @@ res = 100 <200 and 'A'=='A' and 200>100
 print(res)
 res = 100 <200 and 'A'=='A' and 200<100
 print(res) # True and True and  False => False
+res = 100 >200 and 'A'=='B' and 200<100
+print(res) # False and False and  False => False
+
+res = 100 >200 or 'A'=='A' or 200>100
+print(res) # True or True or  True => True
