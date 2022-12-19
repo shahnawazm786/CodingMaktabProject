@@ -24,3 +24,7 @@ print(res) # False or False or  False => False
 #Negations
 print(True)
 print(False)
+res=not(True)
+print(res)
+res=not(False)
+print(res)
