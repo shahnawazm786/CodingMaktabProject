@@ -14,9 +14,9 @@ else:
 
 # An employee is getting 5000 or less or greater
 sal=70000
-if sal==5000:
+if sal==5000: # False
     print('He is getting 5000 salary')
-elif sal>5000:
+elif sal>5000:#True
     print('He is getting more than 5000 salary')
 else:
     print('He is getting less than 5000 salary')
