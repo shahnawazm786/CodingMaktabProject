@@ -20,3 +20,4 @@ elif sal1>5000:#True
     print('He is getting more than 5000 salary')
 else:
     print('He is getting less than 5000 salary')
+
