@@ -38,3 +38,11 @@ num=1
 while num<=10:
     print(num)
     num+=1
+
+# write a program to print 1 to 20 all odd number
+odd=1
+while odd<=20:
+    print(odd)
+    odd+=2
+
+# write a program to print 10 to 1
