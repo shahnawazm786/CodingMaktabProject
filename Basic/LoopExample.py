@@ -46,3 +46,7 @@ while odd<=20:
     odd+=2
 
 # write a program to print 10 to 1
+dec=10
+while dec>=1:
+    print(dec)
+    dec-=1
