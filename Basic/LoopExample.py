@@ -26,9 +26,15 @@ print('Hello! World')
 #print 10 times Hello! World using loop
 x=1
 while x<=10:
-    print('Hello! World')
+    print(x, ' times -> Hello! World')
     x=x+1
-
+'''
 y=1
 while y<=10:
     print('Hello World is printing non stop')
+'''
+#write a program to print 1 to 10
+num=1
+while num<=10:
+    print(num)
+    num+=1
