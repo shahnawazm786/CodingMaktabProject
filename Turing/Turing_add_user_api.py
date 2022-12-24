@@ -24,3 +24,6 @@ print(resp.headers)
 
 # Content type
 print(resp.headers.get('Content-Type'))
+
+# Content length
+print(resp.headers.get('Content-Length'))
