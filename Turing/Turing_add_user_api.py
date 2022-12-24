@@ -1,3 +1,3 @@
 import requests
 
-ur=""
+ur="https://reqres.in/api/users"
