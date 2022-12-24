@@ -17,3 +17,4 @@ print(resp.status_code)
 
 assert resp.status_code==201
 
+print(resp.content)
