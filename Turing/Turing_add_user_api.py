@@ -13,4 +13,5 @@ print(requests_json)
 
 #hit the post api url
 resp=requests.post(url,requests_json)
+print(resp.status_code)
 
