@@ -13,5 +13,5 @@ resp=requests.delete(url)
 
 print(resp.status_code)
 
-assert
+assert resp.status_code == 204
 
