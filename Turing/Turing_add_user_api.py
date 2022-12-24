@@ -18,3 +18,6 @@ print(resp.status_code)
 assert resp.status_code==201
 
 print(resp.content)
+
+#print form response header
+print(resp.headers)
