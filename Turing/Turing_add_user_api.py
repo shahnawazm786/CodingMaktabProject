@@ -15,3 +15,5 @@ print(requests_json)
 resp=requests.post(url,requests_json)
 print(resp.status_code)
 
+assert resp.status_code==201
+
