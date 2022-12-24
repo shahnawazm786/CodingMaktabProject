@@ -11,3 +11,7 @@ print(res.content)
 
 json_response=json.loads(res.text)
 print(json_response)
+
+#find the pages
+pages=jsonpath.jsonpath(json_response,"total_pages")
+print(pages)
