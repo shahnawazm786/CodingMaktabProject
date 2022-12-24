@@ -34,3 +34,5 @@ print(resp.headers.get('Connection'))
 
 #NEL
 print(resp.headers.get('NEL'))
+
+#X-Powered-By
