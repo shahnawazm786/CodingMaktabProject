@@ -31,3 +31,6 @@ print(resp.headers.get('Content-Length'))
 #Connection
 
 print(resp.headers.get('Connection'))
+
+#NEL
+print(resp.headers.get('Connection'))
