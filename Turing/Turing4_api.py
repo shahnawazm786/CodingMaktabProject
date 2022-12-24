@@ -14,4 +14,6 @@ print(json_response)
 
 #find the pages
 pages=jsonpath.jsonpath(json_response,"total_pages")
-print(pages)
+print(pages[0])
+
+assert pages[0]==2
