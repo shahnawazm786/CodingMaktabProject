@@ -4,7 +4,7 @@ import requests
 
 url="https://reqres.in/api/users"
 
-def create_user_using_api():
+def test_create_new_users():
     # Read input from json file
     file = open("C:\\json_files\\employee.json", "r")
     json_input = file.read()
