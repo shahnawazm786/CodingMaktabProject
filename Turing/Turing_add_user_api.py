@@ -21,3 +21,6 @@ print(resp.content)
 
 #print form response header
 print(resp.headers)
+
+# Content type
+print(resp.headers.get('Content-Type'))
