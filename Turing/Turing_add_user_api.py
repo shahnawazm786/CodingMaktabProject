@@ -27,3 +27,7 @@ print(resp.headers.get('Content-Type'))
 
 # Content length
 print(resp.headers.get('Content-Length'))
+
+#Connection
+
+print(resp.headers.get('Connection'))
