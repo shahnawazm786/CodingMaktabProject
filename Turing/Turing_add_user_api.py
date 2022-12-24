@@ -2,7 +2,7 @@ import json
 
 import requests
 
-ur="https://reqres.in/api/users"
+url="https://reqres.in/api/users"
 
 # Read input from json file
 file=open("C:\\json_files\\employee.json","r")
@@ -12,4 +12,5 @@ requests_json=json.loads(json_input)
 print(requests_json)
 
 #hit the post api url
+resp=requests.post(url,requests_json)
 
