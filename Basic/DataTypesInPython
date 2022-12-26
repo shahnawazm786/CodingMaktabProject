@@ -1,0 +1,14 @@
+Data Types in Python
+-------------------------
+1. Number
+    a. Integer
+    b. Floating
+    c. Complex
+2. String
+3. Boolean
+4. Collections
+    a. List
+    b. Tuple
+    c. Dictionary
+    d. Sets
+5. Files
