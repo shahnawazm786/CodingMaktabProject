@@ -11,3 +11,9 @@ print(c)
 print(name)
 print(flag1)
 print(flag2)
+d=a+b
+print(d)
+e= a+c
+print(e)
+f=b+c
+print(f)
