@@ -17,3 +17,8 @@ e= a+c
 print(e)
 f=b+c
 print(f)
+#res= a+ name
+#print(res)
+name1=" Kaz Online"
+res= name + name1
+print(res)
