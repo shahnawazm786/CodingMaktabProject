@@ -22,3 +22,5 @@ print(f)
 name1=" Kaz Online"
 res= name + name1
 print(res)
+
+print(str(a)+name)
