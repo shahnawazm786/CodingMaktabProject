@@ -1,0 +1,10 @@
+create table tbl_employee
+(
+empno bigint primary key,
+fname nvarchar(50),
+lname nvarchar(50),
+phone nvarchar(11),
+email nvarchar(25),
+isdeleted bit,
+islocked bit
+);
