@@ -8,3 +8,8 @@ email nvarchar(25),
 isdeleted bit,
 islocked bit
 );
+
+create table tbl_employee_det
+(
+empno bigint primary key,
+address nvarchar(max));
