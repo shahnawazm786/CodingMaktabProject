@@ -11,5 +11,11 @@ islocked bit
 
 create table tbl_employee_det
 (
-empno bigint primary key,
+empno bigint,
 address nvarchar(max));
+
+create table tbl_employee_gender
+(
+    empno bigint,
+    sex char(1)
+);
