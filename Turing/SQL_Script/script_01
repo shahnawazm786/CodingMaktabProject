@@ -18,4 +18,4 @@ create table tbl_employee_gender
 (
     empno bigint,
     sex char(1)
-
+)
