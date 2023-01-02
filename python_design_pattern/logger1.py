@@ -12,3 +12,8 @@ def error(msg):
 
 def warn(msg):
     write_log("WARN",msg)
+
+
+def info(msg):
+    write_log("INFO",msg)
+
