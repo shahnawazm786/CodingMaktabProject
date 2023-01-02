@@ -15,3 +15,4 @@ class Logger(object):
         self._write_log("CRITICAL",msg)
     def error(self,level,msg):
         self._write_log("ERROR",msg)
+
