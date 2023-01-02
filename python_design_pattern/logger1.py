@@ -20,3 +20,5 @@ def info(msg):
 
 def debug(msg):
     write_log("DEBUG",msg)
+
+
