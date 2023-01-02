@@ -10,3 +10,4 @@ print(response.headers)
 print(response.headers.get("Content-Type"))
 content=response.headers.get("Content-Type")
 assert  content== 'application/jsons'
+
