@@ -16,3 +16,5 @@ class Logger(object):
     def error(self,level,msg):
         self._write_log("ERROR",msg)
 
+    def warn(self,level,msg):
+        self._write_log("WARN",msg)
