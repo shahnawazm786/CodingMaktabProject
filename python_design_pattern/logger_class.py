@@ -13,3 +13,5 @@ class Logger(object):
             log_file.write("[{0}] {1}\n".format(level,msg))
     def critical(self,level,msg):
         self._write_log("CRITICAL",msg)
+    def error(self,level,msg):
+        self._write_log("ERROR",msg)
