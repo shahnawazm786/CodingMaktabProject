@@ -17,3 +17,6 @@ def warn(msg):
 def info(msg):
     write_log("INFO",msg)
 
+
+def debug(msg):
+    write_log("DEBUG",msg)
