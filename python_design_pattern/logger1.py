@@ -9,3 +9,6 @@ def critical(msg):
 def error(msg):
     write_log("ERROR",msg)
 
+
+def warn(msg):
+    write_log("WARN",msg)
