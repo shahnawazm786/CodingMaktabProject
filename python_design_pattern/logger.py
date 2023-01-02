@@ -22,6 +22,6 @@ def warn(msg):
     with open("logger.log","a") as log_file:
         log_file.write('[WARN] {0}\n'.format(msg))
 
-def error(msg):
+def info(msg):
     with open("logger.log","a") as log_file:
-        log_file.write('[Error] {0}\n'.format(msg))
+        log_file.write('[Info
