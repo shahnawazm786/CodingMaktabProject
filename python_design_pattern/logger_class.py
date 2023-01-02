@@ -20,4 +20,5 @@ class Logger(object):
         self._write_log("WARN",msg)
     def info(self,level,msg):
         self._write_log("INFO",msg)
-
+    def debug(self,level,msg):
+        self._write_log("DEBUG",msg)
