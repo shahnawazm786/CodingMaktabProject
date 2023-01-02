@@ -6,5 +6,6 @@ def critical(msg):
     write_log("CRITICAL",msg)
 
 
-def critical(msg):
-    write_log("CRITICAL",msg)
+def error(msg):
+    write_log("ERROR",msg)
+
