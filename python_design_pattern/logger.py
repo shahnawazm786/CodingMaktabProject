@@ -13,3 +13,7 @@ def log_message(msg):
 def critical(msg):
     with open("logger.log","a") as log_file:
         log_file.write('[Critical] {0}\n'.format(msg))
+
+def error(msg):
+    with open("logger.log","a") as log_file:
+        log_file.write('[Error] {0}\n'.format(msg))
