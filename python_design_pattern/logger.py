@@ -24,4 +24,4 @@ def warn(msg):
 
 def info(msg):
     with open("logger.log","a") as log_file:
-        log_file.write('[Info
+        log_file.write('[INFO] {0}\n'.format(msg))
