@@ -8,3 +8,8 @@ class Knight(object):
     def __str__(self):
         return "Life: {0}\n Speed: {1}\n Attack Power: {2}\n Attack Range: {3}\n Weapon: {4}\n"\
             .format(self.life,self.speed,self.attack_power,self.attack_range,self.weapon)
+
+class Barracks(object):
+    def generate_knight(self):
+        return Knight(400,5,3,1,"short word")
+
