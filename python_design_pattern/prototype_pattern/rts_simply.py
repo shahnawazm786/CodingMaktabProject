@@ -5,3 +5,6 @@ class Knight(object):
         self.attack_power=attack_power
         self.attack_range=attack_range
         self.weapon=weapon
+    def __str__(self):
+        return "Life: {0}\n Speed: {1}\n Attack Power: {2}\n Attack Range: {3}\n Weapon: {4}\n"\
+            .format(self.life,self.speed,self.attack_power,self.attack_range,self.weapon)
