@@ -1,4 +1,4 @@
-class Logger(object):
+class Logger:
     """
     A file based message logger with the following properties
     Attributes:
