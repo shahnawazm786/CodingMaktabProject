@@ -1,10 +1,11 @@
-class Logger:
+class Logger(object):
+
     """
     A file based message logger with the following properties
     Attributes:
         file_name: a string representing the full path of the log file to which this logger will write its messages.
     """
-    def __int__(self,file_name):
+    def __init__(self,file_name):
         """ Return a Logger object whose file_name is *file_name*"""
         self.file_name=file_name
     def _write_log(self,level,msg):
@@ -22,4 +23,3 @@ class Logger:
         self._write_log("INFO",msg)
     def debug(self,msg):
         self._write_log("DEBUG",msg)
-
