@@ -13,3 +13,7 @@ class Barracks(object):
     def generate_knight(self):
         return Knight(400,5,3,1,"short word")
 
+if __name__=='__main__':
+    barracks=Barracks()
+    knight1=barracks.generate_knight()
+    print("[Kinght] {}".format(knight1))
