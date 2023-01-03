@@ -11,15 +11,15 @@ class Logger(object):
         """Write a message to the file_name for a specific Logger instance """
         with open(self.file_name,"a") as log_file:
             log_file.write("[{0}] {1}\n".format(level,msg))
-    def critical(self,level,msg):
+    def critical(self,msg):
         self._write_log("CRITICAL",msg)
-    def error(self,level,msg):
+    def error(self,msg):
         self._write_log("ERROR",msg)
 
-    def warn(self,level,msg):
+    def warn(self,msg):
         self._write_log("WARN",msg)
-    def info(self,level,msg):
+    def info(self,msg):
         self._write_log("INFO",msg)
-    def debug(self,level,msg):
+    def debug(self,msg):
         self._write_log("DEBUG",msg)
 
