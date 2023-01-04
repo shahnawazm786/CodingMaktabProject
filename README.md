@@ -1,4 +1,6 @@
-# CodingMaktabProject
+# KAZ Python Project
+## Contributed by 
+### #codingmaktab and #kaz
 Coding Maktab Project is of Python Learning Program
 This project contains 
 * Basic Programming of Python
