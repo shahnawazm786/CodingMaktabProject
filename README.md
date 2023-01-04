@@ -1,4 +1,4 @@
-![](img/logo.png)
+
 # KAZ Python Project
 ## Contributed by 
 ### #codingmaktab and #kaz
