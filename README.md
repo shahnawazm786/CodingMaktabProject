@@ -12,5 +12,5 @@ This program contains following topic
   * API Automation
 
 
-![](C:\Users\shahn\OneDrive\Desktop\kaz-logo\archive\100-x-50.png)
+               
 
