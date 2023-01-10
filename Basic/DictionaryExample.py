@@ -8,3 +8,7 @@ a={101:"codingmaktab"}
 # 101 - key
 #codingmaktab - value
 print(type(a))
+b=dict() #constructor
+print(type(b))
+print(b)
+print(a)
