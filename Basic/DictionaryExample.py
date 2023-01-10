@@ -12,3 +12,5 @@ b=dict() #constructor
 print(type(b))
 print(b)
 print(a)
+print(a.keys())
+print(a.values())
