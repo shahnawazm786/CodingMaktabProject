@@ -37,6 +37,12 @@ print(100<50 or 100 < 20 or 100 <10 or 100 < 70)
 
 #negation (negative / opposite of the result)
 a=100>50
-type(a)
+print(type(a))
+print(a)
+print(not(a))
+print(not(not(a)))
+
+# combination of and & or operator
+
 
 
