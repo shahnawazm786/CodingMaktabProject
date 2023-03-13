@@ -43,6 +43,11 @@ print(not(a))
 print(not(not(a)))
 
 # combination of and & or operator
-
+print("Combination of Logical Operator")
+a=100>50 and 100 >70 or 100<20
+print(a)
+a=100>500 and 100 >70 or 100<20
+a=(100>500) and (100 >70 or 100<20)
+print(a)
 
 
