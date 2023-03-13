@@ -23,5 +23,20 @@ print(100!=20)
 print('a'>'b')
 print("Hello"<"World")
 print("Hello"<"hello")
+# logial operator (and, or, not)
+# and -> when all the combination is true, if any of them is false - false
+# or -> if any combination is true - the whole result will be true
+print("Logical Operator")
+print(100>50 and 100 > 20 and 100 >10 and 100 > 70)
+print(100>50 and 100 > 20 and 100 >10 and 100 > 110)
+print(100>50 and 100 > 200 and 100 >100 and 100 > 700)
+
+print(100>50 or 100 > 20 or 100 >10 or 100 > 70)
+print(100<50 or 100 < 20 or 100 <10 or 100 > 70)
+print(100<50 or 100 < 20 or 100 <10 or 100 < 70)
+
+#negation (negative / opposite of the result)
+a=100>50
+type(a)
 
 
