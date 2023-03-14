@@ -7,4 +7,5 @@ print(s,year)
 x=100
 print("This is my {x} first")
 print("this is python programming",sep=',')
+print("Hello","World",sep="****")
 
