@@ -1,0 +1,11 @@
+s={10,20,30}
+print(type(s))
+print(s)
+s1=set()
+print(type(s1))
+s1.add(200)
+s1.add(300)
+s1.add(400)
+print(s1)
+s1.remove(200)
+print(s1)
