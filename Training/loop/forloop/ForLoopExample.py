@@ -7,3 +7,20 @@ for s in str:
         vowel_count=vowel_count+1
 
 print(f"Vowel count is ->{vowel_count}")
+
+#nested
+print("-- Pattern Programming --")
+for i in range(1,5):
+    for j in range(1,5):
+        print(j,end=' ')
+    print()
+
+for i in range(1,5):
+    for j in range(1,i+1):
+        print(j,end=' ')
+    print()
+
+for i in range(1,5):
+    for j in range(1,i+1):
+        print(i,end=' ')
+    print()
