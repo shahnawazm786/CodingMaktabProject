@@ -15,3 +15,4 @@ s1.add(400)
 print(s1)
 s1.pop()
 print(s1)
+
