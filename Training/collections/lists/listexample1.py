@@ -5,3 +5,11 @@ print(l[1])
 print(l[3])
 # {'name':'Python','page':50}
 print(l[4])
+# ('A')
+print(l[3][0])
+# B
+print(l[3][1])
+#Python
+print(l[4]['name'])
+# 50
+print(l[4]['page'])
