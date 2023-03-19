@@ -10,7 +10,7 @@ print(compare(200,500))
 
 def cube(para):
     return para*para*para
-val=zip([10,5,3,4,5],[1,2,3,4])
+val=zip([10,5,3,4,5],[1,2,3,4],[1,2])
 #print(zip)
 print(list(val))
 
