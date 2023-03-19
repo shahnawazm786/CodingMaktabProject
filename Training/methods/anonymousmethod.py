@@ -10,8 +10,7 @@ print(compare(200,500))
 
 def cube(para):
     return para*para*para
-print(cube(2))
-var=zip(cube((3)))
-print(zip)
-print(list(zip))
+val=zip([10,5,3,4])
+#print(zip)
+print(list(val))
 
