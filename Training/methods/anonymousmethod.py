@@ -14,3 +14,8 @@ val=zip([10,5,3,4,5],[1,2,3,4],[1,2])
 #print(zip)
 print(list(val))
 
+name = [ "Manjeet","Nikhil", "Shambhavi", "Astha" ]
+roll_no = [ 4, 1, 3, 2 ]
+val1=zip(roll_no,name)
+print(set(val1))
+
