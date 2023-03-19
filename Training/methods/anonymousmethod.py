@@ -10,5 +10,5 @@ print(compare(200,500))
 
 def cube(para):
     return para*para*para
-
+print(cube(2))
 
