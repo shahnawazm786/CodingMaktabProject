@@ -12,5 +12,6 @@ def cube(para):
     return para*para*para
 print(cube(2))
 var=zip(cube((3)))
-
+print(zip)
+print(list(zip))
 
