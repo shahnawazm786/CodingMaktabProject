@@ -19,3 +19,11 @@ roll_no = [ 4, 1, 3, 2 ]
 val1=zip(roll_no,name)
 print(set(val1))
 
+players = ["Sachin", "Sehwag", "Gambhir", "Dravid", "Raina"]
+# initializing their scores
+scores = [100, 15, 17, 28, 43]
+
+# printing players and scores.
+for pl, sc in zip(players, scores):
+    print("Player :  %s     Score : %d" % (pl, sc))
+
