@@ -27,5 +27,9 @@ scores = [100, 15, 17, 28, 43]
 for pl, sc in zip(players, scores):
     print("Player :  %s     Score : %d" % (pl, sc))
 
+'''
+map() function returns a map object(which is an iterator) of the 
+results after applying the given function to each item of a given iterable (list, tuple etc.)
+'''
 
 
