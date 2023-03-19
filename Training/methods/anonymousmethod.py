@@ -27,3 +27,5 @@ scores = [100, 15, 17, 28, 43]
 for pl, sc in zip(players, scores):
     print("Player :  %s     Score : %d" % (pl, sc))
 
+
+
