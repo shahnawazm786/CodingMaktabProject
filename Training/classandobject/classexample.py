@@ -20,7 +20,6 @@ class camera():
 
 #print(camera.x)
 
-
 dslr=camera(20,40)
 print(dslr.x)
 print(dslr.y)
