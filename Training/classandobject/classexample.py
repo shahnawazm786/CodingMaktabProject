@@ -18,6 +18,7 @@ class camera():
         print(self.z)
 
 
+
 #print(camera.x)
 
 dslr=camera(20,40)
