@@ -24,7 +24,5 @@ def greater(val1,val2):
 print(greater(100,300))
 print(greater(500,300))
 
-grt=lambda x,y : x if x>y else y
-print(grt(300,5))
 
 
