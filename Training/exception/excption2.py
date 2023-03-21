@@ -20,4 +20,5 @@ try:
     print(y)
 except:
     print('y is already deleted')
-
+else:
+    print('Else part of except')
