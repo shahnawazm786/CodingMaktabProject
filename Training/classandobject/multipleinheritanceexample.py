@@ -1,1 +1,3 @@
 class Animal:
+    pass
+
