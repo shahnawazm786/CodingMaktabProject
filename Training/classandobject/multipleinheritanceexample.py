@@ -10,5 +10,12 @@ class Car:
     def who_am_i(self):
         print('I am from Car')
 
+class Baghi(Animal,Car):
+    def __int__(self):
+        print('Baghi Class')
+    def who_am_i(self):
+        print('I am from Baghi')
+
+
 
 
