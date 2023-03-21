@@ -7,3 +7,4 @@ else:
     print(100/2)
 finally:
     print('finally block')
+
