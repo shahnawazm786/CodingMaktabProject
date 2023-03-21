@@ -4,6 +4,7 @@ class Pen:
     def write(self):
         print('Normal writing')
 
+
 class Link(Pen):
     def __init__(self):
         print('I am link class')
