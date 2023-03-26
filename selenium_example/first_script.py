@@ -1,8 +1,14 @@
 from selenium import webdriver
+import time
 
-driver=webdriver.Chrome()
+driver=webdriver.Chrome(executable_path='C:\PythonProject\CodingMaktabProject\Drivers\chrome\chromedriver.exe')
+#driver=webdriver.Firefox()
 #driver.get("https://www.google.com")
 driver.get("https://www.selenium.dev/selenium/web/web-form.html")
-for i in range(1,100000000):
-    pass
+print(driver.title)
+print(driver.page_source)
+driver.maximize_window()
+driver.minimize_window()
+driver.fullscreen_window()
+time.sleep(5) #dead sleep
 driver.quit()
