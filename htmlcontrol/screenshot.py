@@ -11,10 +11,12 @@ radio=driver.find_elements(By.XPATH,value="//input[@name='my-radio']")
 for r in radio:
     if(r.is_selected()):
         r.click()
+        r.screenshot("./file_radio1.png")
     else:
         r.click()
+        r.screenshot("./file_radio2.png")
 
 # take the screenshot
 driver.save_screenshot("./fullpage.png")
-driver.save_screenshot("./screenshot/fullpage.png")
+
 driver.close()
