@@ -1,4 +1,4 @@
-rom selenium import webdriver
+from selenium import webdriver
 import time
 
 from selenium.common import NoSuchElementException
