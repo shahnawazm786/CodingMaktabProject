@@ -1,3 +1,5 @@
+link - https://www.guru99.com/xpath-selenium.html#:~:text=XPath%20starts%2Dwith()%20is,whose%20attribute%20value%20changes%20dynamically.
+
 input[myprop='myvalue'] - cssSelector
 input[id='my-text-id']
 input[type='text']
