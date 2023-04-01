@@ -20,6 +20,5 @@ print(elements)
 for e in elements:
     print(e.tag_name)
 
-
 time.sleep(15)
 driver.quit()
