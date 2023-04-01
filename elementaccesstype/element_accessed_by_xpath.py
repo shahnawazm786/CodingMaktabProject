@@ -9,7 +9,6 @@ driver.get('https://www.selenium.dev/selenium/web/web-form.html')
 time.sleep(5)
 header=driver.find_element(By.XPATH,value='html/body/main/div/div/div/h1')
 print(header.text)
-
 head=driver.find_element(By.XPATH,value='//h1')
 print('This output form refencial xpath ->  '+head.text)
 ele=driver.find_element(By.XPATH,value="//input[@id='my-text-id'] | //input[@id='my-text-id_01']")
