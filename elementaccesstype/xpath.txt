@@ -1,0 +1,52 @@
+input[myprop='myvalue'] - cssSelector
+input[id='my-text-id']
+input[type='text']
+input[name='my-text']
+
+<div class="form-group tp-align-right mt-3">
+              <a href="./index.html">
+                Return to index
+              </a>
+            </div>
+
+form-label w-100 - compound class
+
+<h1 class="display-6">Web form</h1>
+
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+
+html/body/main/div/div/h1 - absolute xpath
+referencial / dynamic xpath
+
+//tagname[@attribute='value']
+//h1
+//h1[text()='Web form']
+Xpath
+=====
+<input class="form-control" type="text" name="my-disabled" placeholder="Disabled input" disabled="">
+(//input[@class='form-control'])[3]
+//input[@type='text'] => (//input[@type='text'])[2]
+//input[@name='my-disabled']
+//input[@placeholder='Disabled input']
+
+<label class="form-label w-100">
+Disabled input
+<input class="form-control" type="text" name="my-disabled" placeholder="Disabled input" disabled="">
+</label>
+-- modified element----
+<label class="form-label w-100">
+Disabled input
+<input class="form-control">
+</label>
+
+//label[contains(text(),'Disabled input')]
+
+//label[contains(text(),'Disabled input')] - label
+//label[contains(text(),'Disabled input')]/input - input inside the label (child the label)
+//label[contains(text(),'Disabled input')]//.. - parent of the label
+(//label[contains(text(),'Disabled input')]//..//label)[1] - first label of the child
+//label[contains(text(),'Disabled input')]//..//..//.. - parent of the parent of the parent of label (form)
+
+
+
+
