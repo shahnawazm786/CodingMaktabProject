@@ -15,5 +15,6 @@ for r in radio:
         r.click()
 
 # take the screenshot
-driver.get_screenshot_as_file("/screenshot/fullpage.png")
+driver.save_screenshot("./fullpage.png")
+driver.save_screenshot("./screenshot/fullpage.png")
 driver.close()
