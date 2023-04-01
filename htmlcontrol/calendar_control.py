@@ -15,16 +15,18 @@ time.sleep(5)
 element=driver.find_element(By.XPATH,value="//input[@name='my-date']")
 element.click()
 time.sleep(5)
-day=driver.find_elements(By.XPATH,value="//td[@class='day']")
-driver.refresh()
-for d in day:
-    print(d.text, end="\t")
-    if(d.text=='14'):
-        print("14 found")
+#day=driver.find_elements(By.XPATH,value="//td[@class='day']")
+day=driver.find_elements(By.XPATH,value="//table//tbody//tr//td")
 
+for d in day:
+
+    if d.text=='14':
+        print("14 found")
         print(d.tag_name)
         d.click()
+        break
 
+   # print(d.text, end="\t")
 
 time.sleep(10)
 driver.close()
