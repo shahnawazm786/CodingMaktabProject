@@ -8,12 +8,15 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.color import Color
 from selenium.webdriver.support.select import Select
 
+from utils.selenium_utils_method import selenium_common_function
+
 driver=webdriver.Chrome()
 driver.implicitly_wait(5)
 driver.get('https://www.selenium.dev/selenium/web/web-form.html')
 time.sleep(5)
 element=driver.find_element(By.XPATH,value="//input[@name='my-date']")
 element.click()
+selenium_common_function.waitTillLoading(element,20)
 time.sleep(5)
 #day=driver.find_elements(By.XPATH,value="//td[@class='day']")
 day=driver.find_elements(By.XPATH,value="//table//tbody//tr//td")
