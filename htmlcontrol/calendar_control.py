@@ -12,7 +12,16 @@ driver=webdriver.Chrome()
 driver.implicitly_wait(5)
 driver.get('https://www.selenium.dev/selenium/web/web-form.html')
 time.sleep(5)
-cal=driver.find_element(By.XPATH,value="//input[@name='my-date']")
-cal.click()
-
+element=driver.find_element(By.XPATH,value="//input[@name='my-date']")
+element.click()
 time.sleep(5)
+day=driver.find_elements(By.XPATH,value="//td[@class='day']")
+for d in day:
+    print(d.text, end="\t")
+    if(d.text=="14"):
+        print("14 found")
+        print(d.tag_name)
+
+
+time.sleep(10)
+driver.close()
