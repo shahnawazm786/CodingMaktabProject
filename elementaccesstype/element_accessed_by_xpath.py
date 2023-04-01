@@ -12,5 +12,7 @@ print(header.text)
 
 head=driver.find_element(By.XPATH,value='//h1')
 print('This output form refencial xpath ->  '+head.text)
+ele=driver.find_element(By.XPATH,value="//input[@id='my-text-id'] | //input[@id='my-text-id_01']")
+ele.send_keys('hello')
 driver.quit()
 
