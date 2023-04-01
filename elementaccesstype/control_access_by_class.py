@@ -15,6 +15,11 @@ except(NoSuchElementException):
     inputText = driver.find_element(By.CLASS_NAME, value="form-label")
     inputText.send_keys("By class accessed")
 '''
+elements=driver.find_elements(By.CLASS_NAME,value='form-label')
+print(elements)
+for e in elements:
+    print(e.tag_name)
+
 
 time.sleep(15)
 driver.quit()
