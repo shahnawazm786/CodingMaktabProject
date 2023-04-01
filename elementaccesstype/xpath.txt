@@ -46,7 +46,19 @@ Disabled input
 //label[contains(text(),'Disabled input')]//.. - parent of the label
 (//label[contains(text(),'Disabled input')]//..//label)[1] - first label of the child
 //label[contains(text(),'Disabled input')]//..//..//.. - parent of the parent of the parent of label (form)
+//label[starts-with(text(),'Disabled')]
+//h1[ends-with(text(),'form')]
+<input class="form-control">
+//input[contains(@class,'form-control')]
+//label[contains(@class,'w-100')]
+//input[contains(@class,'form-control') and @name='my-text']
+//input[contains(@class,'form-control') or @name='my-password']
+-----------------------
+<input type="text" class="form-control" name="my-text" id="my-text-id" myprop="myvalue">
+<input type="text" class="form-control" name="my-text" id="my-text-id_01" myprop="myvalue">
+//input[@id='my-text-id'] | //input[@id='my-text-id_01']
 
-
+//input[@id='my-text-id'] | //input[@id='my-text-id_01']
+//input[@id='my-text-id'] & //input[@id='my-text-id_01']
 
 
