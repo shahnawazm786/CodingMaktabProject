@@ -26,3 +26,6 @@ if radio.is_selected()==True:
 else:
     print('Radio button is not selected')
 
+print(radio.get_attribute("class"))
+print(radio.get_dom_attribute("type"))
+print(radio.get_property("class"))
