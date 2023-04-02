@@ -16,10 +16,10 @@ driver.get('https://www.selenium.dev/selenium/web/web-form.html')
 time.sleep(5)
 element=driver.find_element(By.XPATH,value="//input[@name='my-date']")
 element.click()
-selenium_common_function.waitTillLoading(element,20)
+#selenium_common_function.waitTillLoading(element,20)
 time.sleep(5)
-#day=driver.find_elements(By.XPATH,value="//td[@class='day']")
-day=driver.find_elements(By.XPATH,value="//table//tbody//tr//td")
+day=driver.find_elements(By.XPATH,value="//td[@class='day']")
+#day=driver.find_elements(By.XPATH,value="//table//tbody//tr//td")
 
 for d in day:
 
