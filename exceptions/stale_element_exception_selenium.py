@@ -20,4 +20,3 @@ except(StaleElementReferenceException):
 ele.clear()
 ele.send_keys("Automation"+Keys.ENTER)
 time.sleep(5)
-
