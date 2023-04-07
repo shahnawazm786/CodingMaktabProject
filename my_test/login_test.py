@@ -2,6 +2,7 @@ from selenium import webdriver
 
 from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
+from pytest_html_reporter import attach
 
 import time
 import pytest
@@ -17,7 +18,9 @@ def test_login_successful():
     user_name.send_keys("Admin")
     password.send_keys("admin123")
     btn.click()
+    attach(data=driver.get_screenshot_as_png())
     assert driver.title=="OrangeHRM"
+    assert True
 
 def test_not_login_successful():
 
@@ -30,4 +33,8 @@ def test_not_login_successful():
     user_name.send_keys("Admin")
     password.send_keys("")
     btn.click()
-    assert driver.title==" "
+
+    #driver.save_screenshot("fail.png")
+    attach(data=driver.get_screenshot_as_png())
+    #attach(data=driver.get_screenshot_as_png())
+    assert False
