@@ -19,8 +19,8 @@ def test_login_successful():
     password.send_keys("admin123")
     btn.click()
     attach(data=driver.get_screenshot_as_png())
-    assert driver.title=="OrangeHRM"
-    assert True
+    #assert driver.title=="OrangeHRM"
+    assert False
 
 def test_not_login_successful():
 
