@@ -15,3 +15,5 @@ class selenium_common_function:
         return WebDriverWait(driver,duration).until(
                 expected_conditions.element_to_be_clickable(By.XPATH,value=val))
 
+
+
