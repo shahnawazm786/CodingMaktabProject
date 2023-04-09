@@ -1,0 +1,53 @@
+pytest -v
+
+pytest <filename> -v
+
+pytest -k <substring> -v
+
+Groupping
+@pytest.mark.<markername>
+
+pytest -m <markername> -v
+
+pytest -m others -v
+
+---
+@pytest.fixture
+
+pytest -k divisible -v
+
+Pytest - Parameterizing Tests
+import pytest
+
+@pytest.mark.parametrize("num, output",[(1,11),(2,22),(3,35),(4,44)])
+def test_multiplication_11(num, output):
+   assert 11*num == output
+
+
+
+Pytest - Xfail/Skip Tests
+@pytest.mark.xfail
+@pytest.mark.skip
+
+import pytest
+@pytest.mark.xfail
+@pytest.mark.great
+def test_greater():
+   num = 100
+   assert num > 100
+
+@pytest.mark.xfail
+@pytest.mark.great
+def test_greater_equal():
+   num = 100
+   assert num >= 100
+
+@pytest.mark.skip
+@pytest.mark.others
+def test_less():
+   num = 100
+   assert num < 200
+
+
+Pytest - Stop Test Suite after N Test Failures
+pytest --maxfail = <num>
