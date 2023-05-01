@@ -20,6 +20,7 @@ class LoginPage():
     def loginButtonClick(self):
         self.driver.find_element(self.btnLogin).click()
 
+    @classmethod
     def tearup(self):
         self.driver.delete_all_cookies()
         self.driver.quit()
