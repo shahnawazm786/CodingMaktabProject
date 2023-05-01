@@ -4,6 +4,7 @@ class LoginPage():
     inputUserTextBox=By.NAME(value="username")
     inputPasswordTextBox=By.NAME(value="password")
     btnLogin=By.XPATH(value="//button[@type='submit']")
+    imgLogo=By.XPATH(value="(//img)[1]")
 
     @classmethod
     def setup(self):
