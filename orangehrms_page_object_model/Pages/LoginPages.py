@@ -14,10 +14,12 @@ class LoginPage():
 
     def enterUserName(self):
         self.driver.find_element(self.inputUserTextBox).clear()
-        self.driver.find_element(self.inputUserTextBox).send_keys("admin")
+        self.driver.find_element(self.inputUserTextBox).send_keys("Admin")
 
     def enterPassword(self):
-        self.driver.find_element(self.inputPasswordTextBox)
+        self.driver.find_element(self.inputPasswordTextBox).clear()
+        self.driver.find_element(self.inputPasswordTextBox).send_keys("admin123")
+
     def loginButtonClick(self):
         self.driver.find_element(self.btnLogin).click()
 
