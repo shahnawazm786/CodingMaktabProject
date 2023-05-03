@@ -1,5 +1,6 @@
 from selenium import webdriver
 from orangehrms_page_object_model.Pages.LoginPages import LoginPage
+import time
 class Test001_Login:
     baseURL='https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'
     userName='Admin'
@@ -10,9 +11,9 @@ class Test001_Login:
         self.driver.implicitly_wait(10)
         self.driver.get(self.baseURL)
         self.driver.maximize_window()
+        time.sleep(10)
         page_title=self.driver.title
-        self.driver.quit()
-        self.driver.close()
+
         if page_title=='OrangeHRM':
             assert True
         else:
