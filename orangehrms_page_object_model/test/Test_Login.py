@@ -16,6 +16,8 @@ class Test001_Login:
 
     def test_login_to_job_portal(self):
         self.driver=webdriver.Chrome()
+        self.driver.get(self.baseURL)
+        login_page
 
 
 
