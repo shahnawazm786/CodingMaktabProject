@@ -43,6 +43,10 @@ class Test001_Login:
         #self.driver.save_screenshot("test_login_to_job_portal.png")
         self.driver.close()
 
+    def test_logout_from_job_protal(self,setup):
+        self.driver=setup
+
+
 
 
 
