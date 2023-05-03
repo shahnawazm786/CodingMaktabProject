@@ -1,4 +1,5 @@
 from selenium import webdriver
+from orangehrms_page_object_model.Pages.LoginPages import LoginPage
 class Test001_Login:
     baseURL='https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'
     userName='Admin'
@@ -17,7 +18,7 @@ class Test001_Login:
     def test_login_to_job_portal(self):
         self.driver=webdriver.Chrome()
         self.driver.get(self.baseURL)
-        login_page
+        login_page=
 
 
 
