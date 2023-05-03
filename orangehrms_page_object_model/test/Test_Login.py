@@ -18,7 +18,9 @@ class Test001_Login:
             assert True
         else:
             assert False
-
+        time.sleep(10)
+        self.driver.quit()
+        self.driver.close()
     def test_login_to_job_portal(self):
         self.driver=webdriver.Chrome()
         self.driver.implicitly_wait(10)
@@ -28,6 +30,7 @@ class Test001_Login:
         self.login_page.setUserName(self.userName)
         self.login_page.setPassword(self.password)
         self.login_page.clickLoginButton()
+        time.sleep(20)
         self.driver.quit()
         self.driver.close()
 
