@@ -15,6 +15,8 @@ class Test001_Login:
             assert False
 
     def test_login_to_job_portal(self):
+        self.driver=webdriver.Chrome()
+
 
 
 
