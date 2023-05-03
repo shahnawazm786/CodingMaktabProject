@@ -5,4 +5,4 @@ class Test001_Login:
     password='admin123'
 
     def test_home_page_title(self):
-        pass
+        self.driver=webdriver.Chrome()
