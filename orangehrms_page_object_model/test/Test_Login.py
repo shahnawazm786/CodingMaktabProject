@@ -7,8 +7,8 @@ class Test001_Login:
 
     def test_home_page_title(self):
         self.driver=webdriver.Chrome()
-        self.driver.get(self.baseURL)
         self.driver.implicitly_wait(10)
+        self.driver.get(self.baseURL)
         self.driver.maximize_window()
         page_title=self.driver.title
         self.driver.quit()
@@ -20,8 +20,8 @@ class Test001_Login:
 
     def test_login_to_job_portal(self):
         self.driver=webdriver.Chrome()
-        self.driver.get(self.baseURL)
         self.driver.implicitly_wait(10)
+        self.driver.get(self.baseURL)
         self.driver.maximize_window()
         self.login_page=LoginPage(self.driver)
         self.login_page.setUserName(self.userName)
