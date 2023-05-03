@@ -13,7 +13,8 @@ class Test001_Login:
         self.driver.maximize_window()
         time.sleep(10)
         page_title=self.driver.title
-        if page_title=='OrangeHRM':
+        print(page_title)
+        if page_title == 'OrangeHRM':
             assert True
         else:
             assert False
