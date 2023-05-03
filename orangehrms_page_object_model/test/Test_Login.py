@@ -9,7 +9,10 @@ class Test001_Login:
         self.driver=webdriver.Chrome()
         self.driver.get(self.baseURL)
         self.driver.implicitly_wait(10)
+        self.driver.maximize_window()
         page_title=self.driver.title
+        self.driver.quit()
+        self.driver.close()
         if page_title=='OrangeHRM':
             assert True
         else:
@@ -18,10 +21,14 @@ class Test001_Login:
     def test_login_to_job_portal(self):
         self.driver=webdriver.Chrome()
         self.driver.get(self.baseURL)
+        self.driver.implicitly_wait(10)
+        self.driver.maximize_window()
         self.login_page=LoginPage(self.driver)
-        self.login_page.enterUserName(self.userName)
-        self.login_page.enterPassword(self.password)
+        self.login_page.setUserName(self.userName)
+        self.login_page.setPassword(self.password)
         self.login_page.loginButtonClick()
+        self.driver.quit()
+        self.driver.close()
 
 
 
