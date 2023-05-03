@@ -1,10 +1,10 @@
 from selenium.webdriver.common.by import By
 
 class LoginPage:
-    inputUserTextBox=By.NAME(value="username")
-    inputPasswordTextBox=By.NAME(value="password")
-    btnLogin=By.XPATH(value="//button[@type='submit']")
-    imgLogo=By.XPATH(value="(//img)[1]")
+    inputUserTextBox=By.NAME("username")
+    inputPasswordTextBox=By.NAME("password")
+    btnLogin=By.XPATH("//button[@type='submit']")
+    imgLogo=By.XPATH("(//img)[1]")
 
     def __init__(self,driver):
         self.driver=driver
