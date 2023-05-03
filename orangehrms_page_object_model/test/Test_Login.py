@@ -1,6 +1,7 @@
 from selenium import webdriver
 from orangehrms_page_object_model.Pages.LoginPages import LoginPage
 from pytest_html_reporter import attach
+import pytest_html
 import time
 class Test001_Login:
     baseURL='https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'
