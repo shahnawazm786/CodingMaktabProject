@@ -14,7 +14,7 @@ class LoginPage:
         self.driver.find_element(By.NAME,self.inputUserTextBox_Name).send_keys(username)
 
     def enterPassword(self,password):
-        self.driver.find_element(self.inputPasswordTextBox).clear()
+        self.driver.find_element(By.NAME,self.inputPasswordTextBox_By_Name).clear()
         self.driver.find_element(self.inputPasswordTextBox).send_keys(password)
 
     def loginButtonClick(self):
