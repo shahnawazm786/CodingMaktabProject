@@ -8,7 +8,7 @@ class T001_Home_Page():
         self.driver.implicitly_wait(10)
         self.driver.get(self.baseURL)
         actual_title=self.driver.title
-        if actual_title=='':
+        if actual_title=='AskOmDch – Become a Selenium automation expert!':
             assert True
             self.driver.close()
         else:
@@ -23,6 +23,7 @@ class T001_Home_Page():
         self.driver.get(self.baseURL)
         self.homePage=HomePage(driver=self.driver)
         self.homePage.click_on_home_link()
+        self.homePage.verify_home_page_title(self.driver.title)
 
 
 

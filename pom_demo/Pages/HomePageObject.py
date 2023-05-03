@@ -28,7 +28,7 @@ class HomePage():
             assert False
 
     def verify_home_page_title(self,title):
-        if title == '':
+        if title == 'AskOmDch – Become a Selenium automation expert!':
             assert True
         else:
             assert False
