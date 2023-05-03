@@ -1,6 +1,6 @@
 
 from selenium.webdriver.common.by import By
-class HomePage():
+class HomePage:
     link_home_by_xpath="//li[@id='menu-item-1254']/a"
     link_about_by_xpath="//li[@id='menu-item-1255']/a"
     link_my_account_by_xpath="//li[@id='menu-item-1256']/a"

@@ -1,6 +1,6 @@
 from selenium import webdriver
-from pom_demo.Pages.HomePageObject import HomePage
-class T001_Home_Page():
+from demo_page.Pages.HomePageObject import HomePage
+class T001_Home_Page:
     baseURL="https://askomdch.com/"
     def test_home_page_title(self):
         self.driver=webdriver.Chrome()
@@ -34,6 +34,7 @@ class T001_Home_Page():
         self.driver.get(self.baseURL)
         self.homePage = HomePage(driver=self.driver)
         self.homePage.click_on_about_link()
+        self.driver.close()
 
 
 
