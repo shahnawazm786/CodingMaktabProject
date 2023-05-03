@@ -19,6 +19,10 @@ class Test001_Login:
         self.driver=webdriver.Chrome()
         self.driver.get(self.baseURL)
         self.login_page=LoginPage(self.driver)
+        self.login_page.enterUserName(self.userName)
+        self.login_page.enterPassword(self.password)
+        self.login_page.loginButtonClick()
+
 
 
 
