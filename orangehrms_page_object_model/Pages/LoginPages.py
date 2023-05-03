@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-from selenium import webdriver
 from  BasePages import BasePage
 class LoginPage(BasePage):
     inputUserTextBox=By.NAME(value="username")
@@ -7,15 +6,16 @@ class LoginPage(BasePage):
     btnLogin=By.XPATH(value="//button[@type='submit']")
     imgLogo=By.XPATH(value="(//img)[1]")
 
+    def __init__(self,driver):
+        self.driver=driver
 
-
-    def enterUserName(self):
+    def enterUserName(self,username):
         self.driver.find_element(self.inputUserTextBox).clear()
-        self.driver.find_element(self.inputUserTextBox).send_keys("Admin")
+        self.driver.find_element(self.inputUserTextBox).send_keys(username)
 
-    def enterPassword(self):
+    def enterPassword(self,password):
         self.driver.find_element(self.inputPasswordTextBox).clear()
-        self.driver.find_element(self.inputPasswordTextBox).send_keys("admin123")
+        self.driver.find_element(self.inputPasswordTextBox).send_keys(password)
 
     def loginButtonClick(self):
         self.driver.find_element(self.btnLogin).click()
