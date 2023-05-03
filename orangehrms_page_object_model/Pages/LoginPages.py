@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 from  BasePages import BasePage
-class LoginPage(BasePage):
+class LoginPage:
     inputUserTextBox=By.NAME(value="username")
     inputPasswordTextBox=By.NAME(value="password")
     btnLogin=By.XPATH(value="//button[@type='submit']")
