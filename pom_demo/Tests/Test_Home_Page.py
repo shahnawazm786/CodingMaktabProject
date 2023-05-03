@@ -24,6 +24,17 @@ class T001_Home_Page():
         self.homePage=HomePage(driver=self.driver)
         self.homePage.click_on_home_link()
         self.homePage.verify_home_page_title(self.driver.title)
+        self.driver.close()
+
+    def test_click_on_about_lin(self):
+        self.driver=webdriver.Chrome()
+        self.driver = webdriver.Chrome()
+        self.driver.maximize_window()
+        self.driver.implicitly_wait(10)
+        self.driver.get(self.baseURL)
+        self.homePage = HomePage(driver=self.driver)
+        self.homePage.click_on_about_link()
+
 
 
 
