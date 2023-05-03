@@ -10,7 +10,7 @@ class LoginPage:
         self.driver=driver
 
     def enterUserName(self,username):
-        self.driver.find_element(By.NAME,self.inputUserTextBox).clear()
+        self.driver.find_element(By.NAME,self.inputUserTextBox_Name).clear()
         self.driver.find_element(self.inputUserTextBox).send_keys(username)
 
     def enterPassword(self,password):
