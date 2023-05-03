@@ -6,4 +6,12 @@ class Test001_Login:
 
     def test_home_page_title(self):
         self.driver=webdriver.Chrome()
+        self.driver.get(self.baseURL)
+        self.driver.implicitly_wait(10)
+        page_title=self.driver.title
+        if page_title=='OrangeHRM':
+            assert True
+        else:
+            assert False
+
 
