@@ -8,6 +8,7 @@ class HomePage():
     link_my_account_by_xpath="//li[@id='menu-item-1256']/a"
     link_cart_by_xpath="//li[@id='menu-item-1257']/a"
     link_contact_us_by_xpath="//li[@id='menu-item-1258']/a"
+    header_text_by_xpath="//h2[text()='Blue Shoes']"
 
     def __init__(self,driver):
         self.driver=driver
@@ -21,3 +22,9 @@ class HomePage():
         self.driver.find_element(By.XPATH, self.link_cart_by_xpath).click()
     def click_on_contact_us_link(self):
         self.driver.find_element(By.XPATH, self.link_contact_us_by_xpath).click()
+    def verify_header_of_item(self,header):
+        actual_header=self.driver.find_element(By.XPATH,self.header_text_by_xpath).get_text()
+        if actual_header == header:
+            assert True
+        else:
+            assert False
