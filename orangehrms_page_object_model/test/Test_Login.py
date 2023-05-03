@@ -1,2 +1,5 @@
-class Test_Login:
-    pass
+class Test001_Login:
+    baseURL=''
+    userName=''
+    password=''
+
