@@ -27,7 +27,7 @@ class Test001_Login:
         self.login_page=LoginPage(self.driver)
         self.login_page.setUserName(self.userName)
         self.login_page.setPassword(self.password)
-        self.login_page.loginButtonClick()
+        self.login_page.clickLoginButton()
         self.driver.quit()
         self.driver.close()
 
