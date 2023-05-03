@@ -1,7 +1,5 @@
-from selenium import webdriver
+
 from selenium.webdriver.common.by import By
-
-
 class HomePage():
     link_home_by_xpath="//li[@id='menu-item-1254']/a"
     link_about_by_xpath="//li[@id='menu-item-1255']/a"
@@ -25,6 +23,12 @@ class HomePage():
     def verify_header_of_item(self,header):
         actual_header=self.driver.find_element(By.XPATH,self.header_text_by_xpath).get_text()
         if actual_header == header:
+            assert True
+        else:
+            assert False
+
+    def verify_home_page_title(self,title):
+        if title == '':
             assert True
         else:
             assert False
