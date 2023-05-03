@@ -15,13 +15,11 @@ class Test001_Login:
         time.sleep(10)
         page_title=self.driver.title
         print(page_title)
-        '''
+
         if page_title == 'OrangeHRM':
             assert True
         else:
             assert False
-        
-        '''
         self.driver.close()
     def test_login_to_job_portal(self,setup):
         #self.driver=webdriver.Chrome()
@@ -33,6 +31,7 @@ class Test001_Login:
         self.login_page.setUserName(self.userName)
         self.login_page.setPassword(self.password)
         self.login_page.clickLoginButton()
+        self.driver.save_screenshot(".\\screen"+"test_login_to_job_portal.png")
         self.driver.close()
 
 
