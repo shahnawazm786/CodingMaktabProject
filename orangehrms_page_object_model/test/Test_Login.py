@@ -1,5 +1,6 @@
 from selenium import webdriver
 from orangehrms_page_object_model.Pages.LoginPages import LoginPage
+from pytest_html_reporter import attach
 import time
 class Test001_Login:
     baseURL='https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'
@@ -20,6 +21,9 @@ class Test001_Login:
             assert True
             self.driver.close()
         else:
+            #attach(self.driver.get_screenshot_as_file("test_home_page_title.png"))
+            #self.driver.get_screenshot_as_png()
+            #self.driver.get_screenshot_as_file("1.png")
             self.driver.save_screenshot("test_home_page_title.png")
             self.driver.close()
             assert False
