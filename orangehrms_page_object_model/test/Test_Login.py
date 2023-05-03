@@ -23,8 +23,9 @@ class Test001_Login:
         
         '''
         self.driver.close()
-    def test_login_to_job_portal(self):
-        self.driver=webdriver.Chrome()
+    def test_login_to_job_portal(self,setup):
+        #self.driver=webdriver.Chrome()
+        self.driver = setup
         self.driver.implicitly_wait(10)
         self.driver.get(self.baseURL)
         self.driver.maximize_window()
