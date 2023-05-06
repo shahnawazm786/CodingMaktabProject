@@ -10,5 +10,5 @@ class WaitsDriver:
     def wait_visibility_of_element_located(self,locator):
         self.wait=WebDriverWait(self.driver,10)
         return self.wait.until(EC.invisibility_of_element_located(locator))
-
+    
 
